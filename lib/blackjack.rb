@@ -30,9 +30,16 @@ end
 
 def hit?(card_total)
  prompt_user
- get_user_input=input
- 
+ input=get_user_input
+ if input=="s"
+   initial_round
+   elsif input=="h"
+     deal_card
+     total=deal_card+initial_round
+   else
+     invalid_command
 end
+
 
 def invalid_command
   puts "Please enter a valid command"
