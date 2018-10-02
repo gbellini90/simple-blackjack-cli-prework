@@ -32,8 +32,8 @@ def hit?(card_total)
   prompt_user
   input=get_user_input
   if input=="h"
-  deal_card
-  return card_total=deal_card+initial_round
+  second_deal_total=deal_card
+  return card_total=second_deal_total+initial_round
   elsif input=="s"
   return initial_round
   else
