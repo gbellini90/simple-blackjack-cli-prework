@@ -33,8 +33,9 @@ def hit?(card_total)
   input=get_user_input
   if input=="h"
   deal_card
+  return card_total=deal_card+initial_round
   elsif input=="s"
-  return card_total
+  return initial round
   else
   invalid_command
 end
